@@ -1,0 +1,99 @@
+/* ------------ geral ------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #ffffff;
+  --paragraph: #669199;
+  --primary: hsl(153, 100%, 33%);
+  --primary-light: hsl(141, 50%, 57%);
+  --primary-dark: hsl(153, 100%, 26%);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--paragraph);
+}
+
+.signup h1,
+.or h2 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+/* ------------ main ------------ */
+main {
+  padding-block: 8rem;
+}
+
+.logo {
+  width: 2.5rem;
+}
+
+/* ------------ signup ------------ */
+.signup #signup-form .form-control::placeholder {
+  color: var(--paragraph);
+}
+
+.signup #signup-form .form-control:valid {
+  border-color: var(--primary-light);
+}
+
+.signup #signup-form .btn {
+  background: var(--primary-light);
+
+  color: var(--bg);
+
+  transition: all 200ms;
+}
+
+.signup #signup-form .btn:hover {
+  background: var(--primary);
+}
+
+/* ------------ login ------------ */
+.login p {
+  font-size: 1.1rem;
+}
+
+.login .login-btn {
+  text-decoration: none;
+  font-weight: 500;
+
+  color: var(--primary-light);
+
+  transition: all 200ms;
+}
+
+.login .login-btn:hover {
+  color: var(--primary);
+}
+
+/* ------------ or ------------ */
+.or h2 {
+  text-transform: uppercase;
+}
+
+.or .btn {
+  color: var(--paragraph);
+
+  border: 1px solid #ced4da;
+
+  opacity: 0.8;
+
+  transition: all 200ms;
+}
+
+.or .btn .google-logo {
+  width: 1.4rem;
+}
+
+.or .btn .apple-logo {
+  width: 1.8rem;
+}
+
+.or .btn:hover {
+  opacity: 1;
+}
