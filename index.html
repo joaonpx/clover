@@ -32,14 +32,12 @@
       <div class="signup mb-4">
         <h1 class="mb-4">Crie sua conta</h1>
 
-        <!-- o metodo do form era pra ser post, precisei deixar como get para que consiga visualizar o funcionamento sem quebrar a página, isso por conta do action ainda não ter um script para enviar os dados -->
-
         <form
           class="d-flex flex-column gap-3"
           name="signup-form"
           id="signup-form"
-          action=""
-          method="get"
+          action="./pages/name.html"
+          method="post"
         >
           <label class="form-label" for="email" hidden>Email</label>
           <input
